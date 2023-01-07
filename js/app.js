@@ -117,6 +117,7 @@ forward.addEventListener('click', e => {
 function checkCover(){
   if(Cover.src.includes("Kamado")){
     Cover.style.paddingTop = "200px";
+    Cover.style.borderRadius = "50%";
   }else{
     Cover.style.paddingTop = "0px";
   }
