@@ -53,7 +53,7 @@ main{
       border-radius: 50%;
       overflow: hidden;
       img{
-        width: 250px;
+        width: 100%;
         object-fit: fill;
         animation: rotate 10s linear infinite;
         animation-play-state: paused;
@@ -122,7 +122,7 @@ main{
   to{ transform: rotateZ(360deg) };
 }
 
-@media (min-width: 375px) {
+@media (min-width: 374px) {
 
   #audioImage{
     .CoverContainer{

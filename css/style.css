@@ -112,7 +112,7 @@ main #audioImage .CoverContainer {
   overflow: hidden;
 }
 main #audioImage .CoverContainer img {
-  width: 250px;
+  width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
   -webkit-animation: rotate 10s linear infinite;
@@ -191,7 +191,7 @@ main #progressbar #progress {
     transform: rotateZ(360deg);
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 374px) {
   #audioImage .CoverContainer img {
     border-radius: 50%;
   }
