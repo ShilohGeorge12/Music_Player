@@ -109,12 +109,10 @@ main #audioImage .CoverContainer {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 main #audioImage .CoverContainer img {
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 100% !important;
   -webkit-animation: rotate 10s linear infinite;
           animation: rotate 10s linear infinite;
   -webkit-animation-play-state: paused;
@@ -189,10 +187,5 @@ main #progressbar #progress {
   }
   to {
     transform: rotateZ(360deg);
-  }
-}
-@media (min-width: 374px) {
-  main #audioImage .CoverContainer img {
-    border-radius: 50% !important;
   }
 }/*# sourceMappingURL=style.css.map */
