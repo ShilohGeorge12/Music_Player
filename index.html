@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Assets/HTML.png" type="image/x-icon">
+  <title>My Music Player</title>
+  <link rel="stylesheet" href="./Assets/fontawesome-icons/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <main id="main" data-theme="light">
+    <section id="ThemeControl">
+      <button id="changeTheme" type="button" class="toggleTheme"> 
+        <i id="themeIcon" class="fa fa-sun"></i>
+      </button>
+    </section>
+
+    <section id="audioImage">
+      <div class="CoverContainer">
+        <img id="Cover">
+      </div>
+      <p class="info"></p>
+    </section>
+
+    <section id="controls">
+
+      <button id="backward"><i class="fa fa-backward"></i></button>
+      
+      <div id="musicState">
+        <img src="./Assets/play.svg" id="MusicControl">
+      </div>
+
+      <button id="forward"><i class="fa fa-forward"></i></button>
+
+    </section>
+
+    <section id="progressbar">
+      <div id="progress"></div>
+    </section>
+  </main>
+</body>
+</html>

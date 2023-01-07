@@ -1,0 +1,122 @@
+@import './Components';
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: verdana, serif;
+  font-size: 16px;
+}
+
+main{
+  width: 420px;
+  padding: 10px 5px;
+  border-radius: 15px;
+  #ThemeControl{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    button{
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      outline: 0;
+      border: 0;
+      font-size: 1.15em;
+      cursor: pointer;
+    }
+  }
+  #audioImage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 320px;
+    .CoverContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 25px;
+      left: 80px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        width: 100%;
+        animation: rotate 10s linear infinite;
+        animation-play-state: paused;
+      }
+    }
+    .info{
+      text-transform: capitalize;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+  }
+
+  #controls{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    place-items: center;
+    margin-top: 40px;
+    #backward, #forward{
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    #backward{
+      padding-right: 5px;
+    }
+    #forward{
+      padding-left: 2px;
+    }
+    #musicState{
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      img{
+        width: 30px;
+        margin-left: 2.5px;
+        filter: invert(100%); 
+      }
+    }
+  }
+
+  #progressbar{
+    width: 310px;
+    height: 30px;
+    margin: 15px  auto;
+    border-radius: 10px;
+    overflow-x: hidden;
+    #progress{
+      width: 0%;
+      height: 99%;
+      transition: width .5s linear;   
+    }
+  }
+}
+
+@keyframes rotate{
+  from{ transform: rotateZ(0) };
+  to{ transform: rotateZ(360deg) };
+}

@@ -1,0 +1,191 @@
+[data-theme=light] {
+  color: rgb(58, 156, 242);
+  background: rgb(203, 225, 239);
+  box-shadow: 50px 50px 80px rgba(58, 156, 242, 0.5);
+}
+[data-theme=light] #ThemeControl button {
+  background: rgb(58, 156, 242);
+}
+[data-theme=light] #ThemeControl button i {
+  color: white;
+}
+[data-theme=light] #audioImage img {
+  border-color: rgb(58, 156, 242);
+}
+[data-theme=light] #controls #backward, [data-theme=light] #controls #forward {
+  background: rgb(58, 156, 242);
+  color: white;
+}
+[data-theme=light] #controls #musicState {
+  background: rgb(58, 156, 242);
+}
+[data-theme=light] #progressbar {
+  background: rgb(169, 202, 233);
+}
+[data-theme=light] #progressbar #progress {
+  background: rgb(58, 156, 242);
+}
+
+[data-theme=dark] {
+  color: #fff;
+  background: #111;
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.25);
+}
+[data-theme=dark] #ThemeControl button {
+  box-shadow: -5px -5px 38px rgba(0, 0, 0, 0.1), 8px 8px 50px rgba(1, 1, 1, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+[data-theme=dark] #audioImage img {
+  border-color: rgb(1, 1, 1);
+}
+[data-theme=dark] #controls #backward, [data-theme=dark] #controls #forward {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+[data-theme=dark] #controls #musicState {
+  background: rgba(255, 255, 255, 0.1);
+}
+[data-theme=dark] #controls #musicState img {
+  filter: invert(100%);
+}
+[data-theme=dark] #progressbar {
+  background: rgba(76, 75, 75, 0.59);
+}
+[data-theme=dark] #progressbar #progress {
+  background: rgb(188, 189, 190);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: verdana, serif;
+  font-size: 16px;
+}
+
+main {
+  width: 420px;
+  padding: 10px 5px;
+  border-radius: 15px;
+}
+main #ThemeControl {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+main #ThemeControl button {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 1.15em;
+  cursor: pointer;
+}
+main #audioImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 320px;
+}
+main #audioImage .CoverContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: 80px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main #audioImage .CoverContainer img {
+  width: 100%;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+main #audioImage .info {
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+main #controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin-top: 40px;
+}
+main #controls #backward, main #controls #forward {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+main #controls #backward {
+  padding-right: 5px;
+}
+main #controls #forward {
+  padding-left: 2px;
+}
+main #controls #musicState {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main #controls #musicState img {
+  width: 30px;
+  margin-left: 2.5px;
+  filter: invert(100%);
+}
+main #progressbar {
+  width: 310px;
+  height: 30px;
+  margin: 15px auto;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+main #progressbar #progress {
+  width: 0%;
+  height: 99%;
+  transition: width 0.5s linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

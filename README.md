@@ -1,2 +1,3 @@
-# Music_Player
-This is my custom Music Player
+# My Music Player🎵
+
+## This Is My custom music player which contains two songs
