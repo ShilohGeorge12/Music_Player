@@ -121,3 +121,14 @@ main{
   from{ transform: rotateZ(0) };
   to{ transform: rotateZ(360deg) };
 }
+
+@media (min-width: 375px) {
+
+  #audioImage{
+    .CoverContainer{
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+}
