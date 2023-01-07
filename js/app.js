@@ -120,6 +120,7 @@ function checkCover(){
     Cover.style.borderRadius = "50%";
   }else{
     Cover.style.paddingTop = "0px";
+    Cover.style.borderRadius = "50%";
   }
 }
 
