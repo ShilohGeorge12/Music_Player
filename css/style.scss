@@ -55,6 +55,7 @@ main{
       img{
         width: 100%;
         border-radius: 50%;
+        object-fit: cover;
         animation: rotate 10s linear infinite;
         animation-play-state: paused;
       }
