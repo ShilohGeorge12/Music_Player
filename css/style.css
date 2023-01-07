@@ -113,6 +113,7 @@ main #audioImage .CoverContainer {
 }
 main #audioImage .CoverContainer img {
   width: 100%;
+  border-radius: 50%;
   -webkit-animation: rotate 10s linear infinite;
           animation: rotate 10s linear infinite;
   -webkit-animation-play-state: paused;
