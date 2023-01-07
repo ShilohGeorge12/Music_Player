@@ -54,7 +54,6 @@ main{
       overflow: hidden;
       img{
         width: 250px;
-        border-radius: 50%;
         object-fit: cover;
         animation: rotate 10s linear infinite;
         animation-play-state: paused;
