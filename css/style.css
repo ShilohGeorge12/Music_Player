@@ -192,7 +192,7 @@ main #progressbar #progress {
   }
 }
 @media (min-width: 374px) {
-  #audioImage .CoverContainer img {
-    border-radius: 50%;
+  main #audioImage .CoverContainer img {
+    border-radius: 50% !important;
   }
 }/*# sourceMappingURL=style.css.map */
