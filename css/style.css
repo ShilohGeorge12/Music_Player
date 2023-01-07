@@ -112,7 +112,7 @@ main #audioImage .CoverContainer {
   overflow: hidden;
 }
 main #audioImage .CoverContainer img {
-  width: 100%;
+  width: 250px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
